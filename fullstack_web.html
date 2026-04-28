@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Portofolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #4a63ff;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      border: 2px solid #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      border-bottom: 2px solid #333;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      border-bottom: 2px solid #333;
+    }
+
+    .hero-text {
+      width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .hero-text button {
+      padding: 10px 20px;
+      border: 1px solid black;
+      background: white;
+      cursor: pointer;
+    }
+
+    .hero-image {
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+      
+    }
+
+    /* Section Title */
+    .section {
+      padding: 40px 30px;
+      text-align: center;
+      border-bottom: 2px solid #333;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    /* About Grid */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .about-box {
+      border: 1px solid #333;
+      padding: 20px;
+      background: #f8f8f8;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .portfolio-card {
+      border: 2px solid #333;
+      padding: 10px;
+      background: white;
+    }
+
+    .portfolio-image {
+      width: 100%;
+      height: 180px;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .portfolio-card p {
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-text,
+      .hero-image {
+        width: auto;
+      }
+
+      .hero-image {
+        margin-top: 20px;
+      }
+
+      .about-grid,
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links a {
+        margin-left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="brand">Brand</div>
+      <div class="nav-links">
+        <a href="#">Header</a>
+        <a href="#">Biodata</a>
+        <a href="#">Portofolio</a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>
+          Ini adalah Portofolio saya yang berisi informasi tentang diri saya, pengalaman, dan proyek-proyek yang telah saya kerjakan.
+        </p>
+        <button>Pelajari Lebih Lanjut</button>
+      </div>
+      <div class="hero-image">
+        <img src="cherki.jpg" alt="Foto Saya">
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="section">
+      <h2>About Me</h2>
+      <p>A brief introduction about myself</p>
+
+      <div class="about-grid">
+        <div class="about-box">Ahmad Fauzi</div>
+        <div class="about-box">Bachelor Degree</div>
+        <div class="about-box">Staff</div>
+        <div class="about-box">085729332275</div>
+        <div class="about-box">Berenang, Tennis, Membaca</div>
+        <div class="about-box">Klaten</div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="section">
+      <h2>Portofolio</h2>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-image">350 x 200</div>
+          <h3>Proyek 1</h3>
+          <p>Deskripsi proyek 1.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-image">350 x 200</div>
+          <h3>Proyek 2</h3>
+          <p>Deskripsi proyek 2.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-image">350 x 200</div>
+          <h3>Proyek 3</h3>
+          <p>Deskripsi proyek 3.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
